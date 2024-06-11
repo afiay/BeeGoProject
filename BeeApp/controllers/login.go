@@ -26,7 +26,7 @@ func (c *LoginController) Post() {
             c.Redirect("/", 302)
             return
         }
-    }
+    } 
     c.Data["Error"] = "Invalid username or password"
     c.TplName = "login.tpl"
 }
